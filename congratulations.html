@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <style>
+        html {zoom: 190%;} 
+        .buttons-container {
+            width: 100%;
+            background-color: #050505;
+            padding: 1.5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 25px;
+            z-index: 1000; /* Ensure the box stays on top for the love of god PLS DONT TOUCH THIS */
+        }
+
+        .buttons {
+            display: flex;
+            margin-left: 8px;
+        }
+
+        button {
+            padding: 9px 41px;
+            font-size: 6px;
+            margin: 7.5px 3.75px;
+            color: black;
+            border: none;
+            border-radius: 3.75px;
+            cursor: pointer;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .special-button {
+            padding: 15px 47px; 
+        }
+
+        .side-image {
+            width: 130px;
+            height: auto;
+            margin-right: 7.5px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding-top: 151px; 
+            background-image: url("BACKGROUND1.JPG");
+        }
+
+        .gray-box {
+            background-color: rgba(128, 128, 128, 0.4);
+            width: 60%;
+            margin-top: 5px; 
+            padding: 20px;
+            text-align: center;
+            opacity: 0.9;
+            border-radius: 10px; 
+        }
+
+        .gray-box img {
+            max-width: 80%; 
+            height: auto;
+        }
+
+        .golden-box {
+            width: 65%;
+            margin-top: 20px;
+            border: 2px solid gold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .golden-box p {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .button-container {
+            width: 80%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .wide-button {
+            width: 100%; 
+            height: auto; 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 14px; 
+            color: white; 
+            border: none;
+            border-radius: 0; 
+            cursor: pointer;
+        }
+
+        .wide-button-container {
+            display: block;
+            width: 100%;
+        }
+
+        .text-section {
+            width: 80%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .golden-line {
+            width: 80%;
+            margin-top: 20px;
+            border-bottom: 2px solid gold;
+            opacity: 0.5;
+        }
+
+        .bottom-gray-box {
+    width: 80%;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.3); 
+    display: flex;
+    flex-direction: row-reverse; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.bottom-gray-box img {
+    width: 35%; 
+    height: auto;
+}
+
+.bottom-gray-box .text {
+    flex: 1;
+    padding-right: 20px; 
+    text-align: left; 
+    opacity: 1; 
+    line-height: 1.8; 
+}
+
+
+        h1 {
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .summary {
+            font-size: 1.2em;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <div class="buttons">
+            <button style="background-image: url('home.jpg');" onclick="window.location.href='index.html'"></button>
+            <button style="background-image: url('ABOUTUS.jpg');" onclick="window.location.href='aboutus.html'"></button>
+            <button style="background-image: url('PROPERTIES.jpg');" onclick="window.location.href='properties.html'"></button>
+        </div>
+        <img src="sizeimage.png" alt="Side Image" class="side-image">
+    </div>
+    
+    <div class="gray-box">
+        <img src="mabrook.png" alt="Picture">
+        <p style="line-height: 1.7;">
+            We are very happy that you chose the ( Horizon Estates ) team <br/> to be part of this important journey in your life.<br/> We hope that your new property will be a place full of comfort, happiness and beautiful memories ;) <br/>
+        </p>
+    </div>
+    
+    
+    <div class="golden-box">
+        <div class="left"></div>
+        <div class="right">
+            <p id="summaryCity"></p>
+            <p id="summaryDetails"></p>
+            <p id="summaryRent"></p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="https://www.svuonline.org" target="_blank" class="wide-button-container">
+            <button class="wide-button special-button" style="background-image: url('sss.png');"></button> 
+        </a>
+    </div>
+
+    <div class="text-section">
+        <p> We give you a special discount on cleaning services in the first month ! <br/><br/> for more details : </p>
+          
+    </div>
+
+    <a href="https://www.facebook.com/svuonline.org/" target="_blank">
+        <button style="background-image: url('FOLLOW.JPG'); width: 270px; height: 45px;"></button>
+    </a>
+
+    <div class="golden-line"></div>
+
+    <div class="bottom-gray-box">
+        <img src="logo.jpg" alt="Left Image">
+        <div class="text">
+            <p>
+                If you need any assistance, we are always here to serve you.<br/> Thank you for trusting us ! <br/>
+                
+                Phone number : +963 11 9643112 <br/>Email : info@svuonline.org<br/>
+
+                We wish you a pleasant stay! Support Team <br/>
+
+                Copyright © 2024, Horizon Estates 
+    
+            </p> 
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const params = new URLSearchParams(window.location.search);
+            const city = params.get('city');
+            const details = params.get('details');
+            const rent = params.get('rent');
+            if (city && details && rent) {
+                document.getElementById('summaryCity').textContent = `City : ${city}`;
+                document.getElementById('summaryDetails').textContent = `Details : ${details}`;
+                document.getElementById('summaryRent').textContent = `Monthly rent : ${rent}`;
+            }
+        });
+    </script>
+</body>
+</html>
+
+

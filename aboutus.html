@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        html {zoom: 190%;}
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: black;
+            background-image: url('BACKGROUND1.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 1;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 1;
+        }
+
+        p {
+            line-height: 1.0;
+            font-size: 9px;
+            color: black;
+            text-align: justify;
+            margin-bottom: 3px;
+            opacity: 1;
+        }
+
+        .contact-info {
+            margin-top: 3px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 2px 0;
+            font-size: 10px;
+            opacity: 1;
+        }
+
+        .contact-info .button {
+            display: inline-block;
+            width: 100px; 
+            height: 50px; 
+            background-color: #007bff;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px; 
+            transition: background-color 0.3s;
+            font-size: 10px; 
+            margin-top: 3px;
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            opacity: 1;
+        }
+
+        .contact-info .button:hover {
+            background-color: rgb(180, 163, 78);
+            text-align: left;
+           
+        }
+
+        .highlight {
+            background-color: #f5f5f5;
+            padding: 1px 3px;
+            border-radius: 2px;
+            margin-bottom: 3px;
+            font-size: 8px;
+            opacity: 1;
+        }
+
+        .location {
+            font-weight: bold;
+            color: black;
+            opacity: 1;
+        }
+
+        .border-text {
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 
+                1px 1px 0 #000, 
+                -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000;
+            opacity: 1;
+        }
+
+        .buttons-container {
+            width: 100%;
+            background-color: #050505;
+            padding: 1.5px 0; 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            
+            background-size: cover;
+            background-position: center;
+            border-radius: 11px;
+            margin-bottom: 10px;
+            opacity: 1;
+            border-top-left-radius: 0; 
+            border-top-right-radius: 0; 
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .buttons-container .buttons {
+            display: flex;
+            margin-left: 8px; 
+            opacity: 1;
+           
+        }
+
+        .buttons-container button {
+            padding: 9px 41px; 
+            font-size: 6px; 
+            margin: 7.5px 3.75px; 
+            color: black;
+            border: none;
+            border-radius: 3.75px; 
+            cursor: pointer;
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            opacity: 1;
+            
+        }
+
+        .buttons-container button:hover {
+            background-color: rgb(180, 163, 78);
+        }
+
+        .side-image {
+            width: 130px; 
+            height: auto; 
+            margin-right: 7.5px;         
+            opacity: 1;
+        }
+
+       
+        .header-container {
+            background-color: rgba(204, 204, 204, 0.4); 
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px; 
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        
+        .header-container .left h2 {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            margin-left: 10px;
+            margin-right: 10px;
+            opacity: 1;
+        }
+
+        /* Style for Arabic header */
+        .header-container .right h2 {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: black;
+            opacity: 1;
+        }
+
+        /* Style for English text */
+        .header-container .left p {
+            color: black;
+            text-align: justify;
+            margin-bottom: 3px;
+            opacity: 1;
+        }
+
+        /* Style for Arabic text :) */
+        .header-container .right p {
+            color: black;
+            text-align: justify;
+            margin-bottom: 3px;
+            opacity: 1;
+        }
+
+        .separator {
+            border-left: 2px solid transparent;
+            height: auto;
+            opacity: 1;
+        }
+
+        .dual-language-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            opacity: 1;
+        }
+
+        .dual-language-section .left,
+        .dual-language-section .right {
+            width: 48%;
+            opacity: 1;
+        }
+
+        .dual-language-section .right {
+            text-align: right;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <div class="buttons">
+            <button style="background-image: url('home.jpg'); background-size: 100% 100%;background-color: black;" onclick="window.location.href='index.html'"></button>
+            <button style="background-image: url('PROPERTIES.jpg'); background-size: 100% 100%;" onclick="window.location.href='properties.html'"></button>
+        </div>
+        
+        <div class="side-image">
+            
+            <img src="sizeimage.png" alt="Side Image" class="side-image">
+        </div>
+    </div>
+    
+    
+
+        <!-- Container for "Who We Are" section DONT TOUCH PLEASE -->
+        <div class="header-container">
+            <div class="dual-language-section">
+                <div class="left">
+                    <h2 style="color:black;">Who We Are</h2>
+                    <p style="color:black;line-height: 1.4">
+                        We are a leading company specializing in providing premium rental apartments in Syria. Our mission is to offer high-quality living spaces to our clients, ensuring they feel at home wherever they go.
+                    </p>
+                </div>
+                <div class="separator"></div>
+                <div class="right">
+                    <h2 style="color:black;">من نحن</h2>
+                    <p dir="rtl" style="color:black;line-height: 1.4">
+                        نحن شركة رائدة متخصصة في توفير شقق فاخرة للتأجير في سوريا. مهمتنا هي تقديم مساحات سكنية عالية الجودة ومريحة لعملائنا، مما يضمن أنهم يشعرون بالمنزل أينما ذهبوا.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="header-container">
+            <div class="dual-language-section">
+                <div class="left">
+                    <h2 style="color:black;">Our Vision</h2>
+                    <p style="color:black;line-height: 1.4">
+                        Our vision is to become the preferred choice for individuals seeking rental accommodations in Syria. We strive to exceed our customers' expectations by providing exceptional service and maintaining the highest standards of professionalism.
+                    </p>
+                </div>
+                <div class="separator"></div>
+                <div class="right">
+                    <h2 style="color:black;">رؤيتنا</h2>
+                    <p dir="rtl" style="color:black;line-height: 1.4">
+                        رؤيتنا هي أن نصبح الخيار المفضل للأفراد الذين يبحثون عن الإقامة المؤجرة في سوريا. نحن نسعى جاهدين لتجاوز توقعات عملائنا من خلال تقديم خدمة استثنائية والحفاظ على أعلى معايير الاحترافية.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="header-container">
+            <div class="dual-language-section">
+                <div class="left">
+                    <h2 style="color:black;">Branch Locations</h2>
+                    <p class="location" style="color:black; line-height: 1.4;">
+                        Damascus Branch 1:  Mezzeh Jabal, next to the 14 buildings<br>
+                        Damascus Branch 2: Abu Rummaneh, opposite the IT Institute<br>
+                        Latakia Branch:  Saliba , along the main street ‎
+                    </p>
+                </div>
+                <div class="separator"></div>
+                <div class="right">
+                    <h2 style="color:black;">مواقع الفروع</h2>
+                    <p dir="rtl" class="location" style="color:black; line-height: 1.4;">
+                        فرع دمشق 1:  مزة جبل ، جانب بنايات الـ 14<br>
+                        فرع دمشق 2: أبو رمانة ، مقابل معهد تكنولوجيا المعلومات<br>
+                فرع اللاذقية :   الصليبة ، على امتداد الشارع العام
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="contact-info">
+            <p style="margin-left: 15px;">Contact us at: info@svuonline.org</p>
+            <p style="margin-left: 15px;">Phone: +963 11 211 3469</p>
+            <div class="buttons">
+                <a href="https://www.facebook.com/svuonline.org/" class="button" style="background-image: url('FOLLOW.jpg'); width:25%; height:20px; "></a>
+            </div>
+        </div>
+</body>
+</html>
+

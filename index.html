@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+       html {zoom:190%;} /* keep it for all of the pages pls :) */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100px; /* PLS DONT TOUCH THIS */
+            margin: 0;
+            font-size: 8px; 
+            background-color: #171715;
+            background-image: url('BACKGROUND1.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .buttons-container {
+            width: 100%;
+            background-color: #050505;
+            padding: 1.5px 0; 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            background-image: url('BACKGROUND2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            border-radius: 11px; 
+            height: 151px;
+            border-top-left-radius: 0; 
+            border-top-right-radius: 0; 
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .buttons {
+            display: flex;
+            margin-left: 8px; 
+        }
+
+        button {
+            padding: 9px 41px; 
+            font-size: 6px; 
+            margin: 7.5px 3.75px; 
+            color: black;
+            border: none;
+            border-radius: 3.75px; 
+            cursor: pointer;
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+        }
+
+        button:hover {
+            background-color: rgb(180, 163, 78);
+        }
+
+        .company-title {
+            text-align: center;
+            margin: 3.75px 0; 
+            color: blueviolet;
+        }
+
+        .logo img {
+            width: 75px; 
+            height: 60px; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 75%; 
+            font-size: 10px; 
+            color: blueviolet;
+            border-radius: 11px; 
+            overflow: hidden; 
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px; 
+            text-align: center;
+            color: blueviolet;
+        }
+
+        th {
+            background-color: #B28D0A;
+            color: black;
+        }
+
+        caption {
+            background-color: #000000;
+            font-size: 9px; 
+            padding: 3.75px; 
+            color: yellow;
+            opacity:79%;
+            
+        }
+
+        td {
+            background-color: #cfcece;
+            color: black;
+            
+        }
+
+        .side-image {
+            width: 130px; 
+            height: auto; 
+            margin-right: 7.5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <div class="buttons">
+            <button style="background-image: url('ABOUTUS.jpg'); background-size: 100% 100%;" onclick="window.location.href='aboutus.html'"></button>
+            <button style="background-image: url('PROPERTIES.jpg'); background-size: 100% 100%;" onclick="window.location.href='properties.html'"></button>
+        </div>
+        <img src="sizeimage.png" alt="Side Image" class="side-image">
+    </div>
+
+    <div class="logo">
+        <img src="SVU.png" alt="Logo">
+    </div>
+
+    <table>
+        <caption>Supervised by Dr.Mazen khoder / TIC-F23 </caption>
+        <thead>
+            <tr>
+                <th>Full name</th>
+                <th>الاسم الثلاثي</th>
+                <th>ID</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Esraa Ahmad Abd Almahmod</td>
+                <td> اسراء احمد عبد المحمود </td>
+                <td>  Esraa_253385 </td>
+                <td> C2 </td>
+            </tr>
+            <tr>
+                <td>Sara Khaled Ballna</td>
+                <td> سارة خالد بلان</td>
+                <td> Sara_254441 </td>
+                <td> C2 </td>
+            </tr>
+            <tr>
+                <td>Mohamed Majd Farah</td>
+                <td> محمد مجد فرح</td>
+                <td> Mohamad_218218 </td>
+                <td> C5 </td>
+            </tr>
+            <tr>
+                <td>Mohammed Mahmoud Haj Ali</td>
+                <td> محمد محمود حاج علي</td>
+                <td>Mohammed_240852 </td>
+                <td> C2 </td>
+            </tr>
+            <tr>
+                <td>Saber mamdouh alsabea</td>
+                <td> صابر ممدوح السبع</td>
+                <td> Saber_247296 </td>
+                <td> C2 </td>
+            </tr>
+            <tr>
+                <td>Joudi fayez almuallem</td>
+                <td> جودي فايز المعلم</td>
+                <td> Joudi_216570 </td>
+                <td> C5 </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

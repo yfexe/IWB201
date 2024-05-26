@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <style>
+        html {zoom: 190%;} /* keep it for all of the pages pls :) */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            background-image: url("BACKGROUND1.JPG");
+        }
+        .buttons-container {
+            width: 100%;
+            background-color: #050505;
+            padding: 1.5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('BACKGROUND2.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 11px;
+            height: 151px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            height: 1%; /* PLS DONT TOUCH THIS alsooo */
+        
+
+        }
+        .buttons {
+            display: flex;
+            margin-left: 8px;
+        }
+        button {
+            padding: 9px 41px;
+            font-size: 6px;
+            margin: 7.5px 3.75px;
+            color: black;
+            border: none;
+            border-radius: 3.75px;
+            cursor: pointer;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        .side-image {
+            width: 130px;
+            height: auto;
+            margin-right: 7.5px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url("BACKGROUND1.JPG");
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 6px;
+            text-align: left;
+            font-size: 12px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"] {
+            width: calc(100% - 16px);
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+        input[type="text"]::placeholder,
+        input[type="tel"]::placeholder,
+        input[type="email"]::placeholder,
+        input[type="date"]::placeholder {
+            color: #999;
+        }
+        .submit-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .submit-container button {
+            background-image: url('submit.jpg');
+            background-size: 100% 100%;
+            width: 200px;
+            height: 35px;
+        }
+        .submit-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <div class="buttons">
+            <button style="background-image: url('home.jpg'); background-size: 100% 100%;" onclick="window.location.href='index.html'"></button>
+            <button style="background-image: url('ABOUTUS.jpg'); background-size: 100% 100%;" onclick="window.location.href='aboutus.html'"></button>
+            <button style="background-image: url('PROPERTIES.jpg'); background-size: 100% 100%;" onclick="window.location.href='properties.html'"></button>
+        </div>
+        <img src="sizeimage.png" alt="Side Image" class="side-image">
+    </div>
+    <div class="container">
+        <h1>User Info</h1>
+        <form id="userForm">
+            <table>
+                <tr style="background-color:black;color:#D2B538;">
+                    <th>Full Name (Arabic letters only):</th>
+                    <td><input type="text" name="name" pattern="[\u0600-\u06FF\s]+" title="Please enter your name using Arabic letters only" placeholder="Enter your full name in Arabic"></td>
+                </tr>
+                <tr style="background-color:#A5A39C;color:black;">
+                    <th>National Number : <span style="color: rgb(233, 33, 33);">*</span></th>
+                    <td><input type="text" name="nationalNumber" id="nationalNumber" placeholder="XX-XX-XX-XX-XXX" title="Enter an 11-digit national number where the first two digits represent the governorate (01-14) in the format XX-XX-XX-XX-XXX" required></td>
+                </tr>
+                
+                </tr>
+                <tr style="background-color:black;color:#D2B538;">
+                    <th>Birthday : ( mm / dd / yyyy ) </th>
+                    <td><input type="date" name="birthday" title="Please enter your birthday"></td>
+                </tr>
+                <tr style="background-color:#A5A39C;color:black;">
+                    <th>Mobile Number :</th>
+                    <td><input type="tel" name="mobileNumber" pattern="09[3-6,8-9]\d{7}" title="Enter Syraitl or MTN number starting with 09-" maxlength="10" placeholder="Enter your mobile number starting with 09-"></td>
+                </tr>                
+                <tr style="background-color:black;color:#D2B538;">
+                    <th>Email:</th>
+                    <td><input type="email" name="email" placeholder="Enter your email address"></td>
+                </tr>
+                <tr style="background-color:#A5A39C;color:black;">
+                    <th>Details :</th>
+                    <td><input type="text" name="flatName" id="flatName" readonly></td>
+                </tr>
+                <tr style="background-color:black;color:#D2B538;">
+                    <th>City :</th>
+                    <td><input type="text" name="flatLocation" id="flatLocation" readonly></td>
+                </tr>
+                <tr style="background-color:#A5A39C;color:black;">
+                    <th>Monthly Rent :</th>
+                    <td><input type="text" name="monthlyRent" id="monthlyRent" readonly></td>
+                </tr>
+            </table>
+            <div class="submit-container">
+                <button type="submit" style="background-image: url('submit.jpg'); background-size: cover;"></button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const params = new URLSearchParams(window.location.search);
+            const city = params.get('city');
+            const details = params.get('details');
+            const rent = params.get('rent');
+            if (city && details && rent) {
+                document.getElementById('flatLocation').value = city;
+                document.getElementById('flatName').value = details;
+                document.getElementById('monthlyRent').value = rent;
+            }
+        });
+
+        document.getElementById('nationalNumber').addEventListener('input', function (event) {
+            let value = event.target.value.replace(/[^0-9]/g, ''); 
+            let formattedValue = '';
+
+            for (let i = 0; i < value.length; i += 2) {
+                if (i > 0 && i < 10) { 
+                    formattedValue += '-';
+                }
+                formattedValue += value.substr(i, 2);
+            }
+
+            let nationalNumber = formattedValue.replace(/-/g, ''); 
+            if (nationalNumber.length > 11) {
+                nationalNumber = nationalNumber.substr(0, 11);
+            }
+
+            formattedValue = '';
+            for (let i = 0; i < nationalNumber.length; i += 2) {
+                if (i > 0 && i < 10) { 
+                    formattedValue += '-';
+                }
+                formattedValue += nationalNumber.substr(i, 2);
+            }
+
+            event.target.value = formattedValue; 
+        });
+
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const city = document.getElementById('flatLocation').value;
+            const details = document.getElementById('flatName').value;
+            const rent = document.getElementById('monthlyRent').value;
+
+            
+            const nationalNumberField = document.getElementById('nationalNumber'); // National num condition :) >>
+            const nationalNumber = nationalNumberField.value.replace(/-/g, '');
+            const validGovernorates = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14'];
+            const governorateCode = nationalNumber.substr(0, 2);
+            if (nationalNumber.length !== 11 || !validGovernorates.includes(governorateCode)) {
+                alert('Please enter a valid national number. The first two digits must represent a governorate (01-14).');
+                nationalNumberField.focus();
+                return;
+            }
+
+            // Redirect to congratulations page
+            window.location.href = `congratulations.html?city=${encodeURIComponent(city)}&details=${encodeURIComponent(details)}&rent=${encodeURIComponent(rent)}`;
+        });
+    </script>
+</body>
+</html>

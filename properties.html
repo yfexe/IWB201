@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <style>
+        html {zoom: 190%;}
+        .buttons-container {
+            width: 100%;
+            background-color: #050505;
+            padding: 1.5px 0; 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            background-image: url('BACKGROUND2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            border-radius: 11px; 
+            height: 151px;
+            border-top-left-radius: 0; 
+            border-top-right-radius: 0; 
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            height:100%;
+        }
+
+        .buttons {
+            display: flex;
+            margin-left: 8px; 
+        }
+
+        button {
+            padding: 9px 41px; 
+            font-size: 6px;
+            margin: 7.5px 3.75px; 
+            color: black;
+            border: none;
+            border-radius: 3.75px; 
+            cursor: pointer;
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+        .side-image {
+            width: 130px; 
+            height: auto; 
+            margin-right: 7.5px; 
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 65%;
+            background-image: url("BACKGROUND1.JPG");
+        }
+        
+        h1, h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            border-color: transparent;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #111111;
+            color: #D2B538;
+        }
+
+        .details-dropdown {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            background-image: url('BACKGROUND1.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+        }
+
+        .submit-button {
+            display: block;
+            margin: 20px auto;
+            background-color: black;
+            color: #FFD700;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .show-details-button {
+            font-size: 10px; 
+            padding: 5px 10px; 
+            background-color: black; 
+            color: #FFD700; 
+}
+
+        
+        .details-images {
+            display: flex;
+        }
+
+        .details-images img {
+            width: 100px;
+            height: 100px;
+            margin-right: 5px;
+        }
+
+        .details-dropdown {
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <div class="buttons">
+            <button style="background-image: url('home.jpg'); background-size: 100% 100%;" onclick="window.location.href='index.html'"></button>
+            <button style="background-image: url('ABOUTUS.jpg'); background-size: 100% 100%;" onclick="window.location.href='aboutus.html'"></button>
+        </div>
+        <img src="sizeimage.png" alt="Side Image" class="side-image">
+    </div>
+    
+    <h1> Available Properties </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Details</th>
+                <th>Monthly Rent</th>
+                <th>Show Details</th>
+                <th>Choose</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr style="background-color:#B28D0A;color:black; ">
+                <td>Damascus Mazzeh Jabal</td>
+                <td> Furnished cosmetic medical center with an area of 250 square meters </td>
+                <td>$1000</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                            Eight rooms, three bathrooms, two kitchens, and a lounge
+                        <br/>
+                        <span class="details-images">
+                            <img src="img1.jpeg" alt="alt"/>
+                            <img src="img2.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Damascus Mazzeh Jabal" data-details="Furnished cosmetic medical center with an area of 250 square meters" data-rent="$1000"></td>
+            </tr>
+            <tr style="background-color:#A5A39C;color:black;">
+                <td>Damascus Maliki</td>
+                <td> Furnished villa with area of 3000 square meters </td>
+                <td>$800</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        Four rooms with four bathrooms and a swimming pool
+                        <br/>
+                        <span class="details-images">
+                            <img src="img3.jpeg" alt="alt"/>
+                            <img src="img4.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Damascus Maliki" data-details="Furnished villa with area of 3000 square meters" data-rent="$800"></td>
+            </tr>
+            <tr style="background-color:#B28D0A; color:black;" >
+                <td>Latakia Bahloulia</td>
+                <td>Unfurnished residential apartment with an area of 80 square meters</td>
+                <td>$900</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        Two rooms, a bathroom, and a balcony
+                        <br/>
+                        <span class="details-images">
+                            <img src="img5.jpeg" alt="alt"/>
+                            <img src="img6.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Latakia Bahloulia" data-details="Unfurnished residential apartment with an area of 80 square meters" data-rent="$900"></td>
+            </tr>
+            <tr style="background-color:#A5A39C ;color:black;">
+                <td>Homs Shin</td>
+                <td>Furnished residential apartment with an area of 50 square meters</td>
+                <td>$1500</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        One room with one bathroom and a lounge
+                        <br/>
+                        <span class="details-images">
+                            <img src="img7.jpeg" alt="alt"/>
+                            <img src="img8.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Homs Shin" data-details="Furnished residential apartment with an area of 50 square meters" data-rent="$1500"></td>
+            </tr>
+            <tr style="background-color:#B28D0A;color:black; ">
+                <td>Damascus Hamra</td>
+                <td>Supermarket with an area of 120 square meters</td>
+                <td>$1200</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        Refrigerators and cashier counters
+                        <br/>
+                        <span class="details-images">
+                            <img src="img9.jpeg" alt="alt"/>
+                            <img src="img10.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Damascus Hamra" data-details="Supermarket with an area of 120 square meters" data-rent="$1200"></td>
+            </tr>
+            <tr style="background-color:#A5A39C;color:black;">
+                <td>Tartous Rehania</td>
+                <td>Residential apartment with an area of 100 square meters</td>
+                <td>$900</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        Two rooms, two bathrooms, and a balcony
+                        <br/>
+                        <span class="details-images">
+                            <img src="img11.jpeg" alt="alt"/>
+                            <img src="img12.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Tartous Rehania" data-details="Residential apartment with an area of 100 square meters" data-rent="$900"></td>
+            </tr>
+            <tr style="background-color:#B28D0A;color:black; ">
+                <td>Damascus Abu Rummaneh</td>
+                <td>Apartment with an area of 80 square meters</td>
+                <td>$900</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        Two rooms, two bathrooms, and a balcony
+                        <br/>
+                        <span class="details-images">
+                            <img src="img13.jpeg" alt="alt"/>
+                            <img src="img14.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Damascus Abu Rummaneh" data-details="Apartment with an area of 80 square meters" data-rent="$900"></td>
+            </tr>
+            <tr style="background-color:#A5A39C ;color:black;">
+                <td>Aleppo Jabil</td>
+                <td>Restaurant with an area of 200 square meters</td>
+                <td>$900</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        Two floors with a kitchen and its equipment
+                        <br/>
+                        <span class="details-images">
+                            <img src="img15.jpeg" alt="alt"/>
+                            <img src="img16.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Aleppo Jabil" data-details="Restaurant with an area of 200 square meters" data-rent="$900"></td>
+            </tr>
+             <tr style="background-color:#B28D0A;color:black; ">
+                <td>Damascus Salhia</td>
+                <td>Electronic games store with an area of 100 square meters</td>
+                <td>$900</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        Four PlayStation devices with two TVs and seven computers
+                        <br/>
+                        <span class="details-images">
+                            <img src="img17.jpeg" alt="alt"/>
+                            <img src="img18.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Damascus Salhia" data-details="Electronic games store with an area of 100 square meters" data-rent="$900"></td>
+            </tr> 
+            <tr style="background-color:#A5A39C ;color:black;">
+                <td>Latakia Saliba</td>
+                <td>Land, sea, and air shipping office with an area of 120 square meters</td>
+                <td>$900</td>
+                <td>
+                    <button class="show-details-button">Show Details</button>
+                    <div class="details-dropdown">
+                        <p>
+                        Available offices with chairs and computers
+                        <br/>
+                        <span class="details-images">
+                            <img src="img19.jpeg" alt="alt"/>
+                            <img src="img20.jpeg" alt="alt"/>
+                        </span>
+                        </p>
+                    </div>
+                </td>
+                <td><input type="radio" name="choose-flat" data-city="Latakia Saliba" data-details="Land, sea, and air shipping office with an area of 120 square meters" data-rent="$900"></td>
+            </tr> 
+        </tbody>
+    </table>
+
+    <a href="#" id="submit-button" class="submit-button" style="width: calc(70% - 20px);" style="background-color: black;color: #D2B538;" >Choose your Property and continue</a>
+
+    <script>
+        const showDetailsButtons = document.querySelectorAll('.show-details-button');
+        const submitButton = document.getElementById('submit-button');
+        const radioButtons = document.querySelectorAll('input[name="choose-flat"]');
+
+        showDetailsButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const detailsDropdown = this.nextElementSibling;
+                detailsDropdown.style.display = detailsDropdown.style.display === 'none' || !detailsDropdown.style.display ? 'block' : 'none';
+            });
+        });
+
+        submitButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            const selectedRadio = document.querySelector('input[name="choose-flat"]:checked');
+            if (selectedRadio) {
+                const city = selectedRadio.dataset.city;
+                const details = selectedRadio.dataset.details;
+                const rent = selectedRadio.dataset.rent;
+                submitButton.href = `form.html?city=${encodeURIComponent(city)}&details=${encodeURIComponent(details)}&rent=${encodeURIComponent(rent)}`;
+                window.location.href = submitButton.href;
+            } else {
+                alert('Please choose a property.');
+            }
+        });
+    </script>
+</body>
+</html>
